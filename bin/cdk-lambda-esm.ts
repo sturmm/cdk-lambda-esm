@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { CdkLambdaEsmStack } from '../lib/cdk-lambda-esm-stack';
+import { EsmLambdaStack } from '../lib/esm-lambda-stack';
 
 const app = new cdk.App();
-new CdkLambdaEsmStack(app, 'CdkLambdaEsmStack', {
+new EsmLambdaStack(app, 'EsmLambdaStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
